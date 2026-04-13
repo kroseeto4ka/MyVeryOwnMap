@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  MyVeryOwnMap
-//
-//  Created by Никита Сорочинский on 4/13/26.
-//
-
 import UIKit
 
 @main
