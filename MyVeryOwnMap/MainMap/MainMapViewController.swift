@@ -21,12 +21,10 @@ extension MainMapViewController: MKMapViewDelegate {
     }
     
     func setupMapView() {
-        //mapView.region = MKCoordinateRegion()
         mapView.delegate = self
         mapView.showsUserLocation = true
     }
 }
-
 
 extension MainMapViewController {
     func setupLayout() {
