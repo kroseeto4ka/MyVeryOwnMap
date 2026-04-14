@@ -32,8 +32,8 @@ jobs:
       - name: Build app
         run: |
           xcodebuild build \
-            -scheme CarHunt \
-            -project CarHunt.xcodeproj \
+            -scheme MyVeryOwnMap \
+            -project MyVeryOwnMap.xcodeproj \
             -destination 'generic/platform=iOS Simulator'
 
   test:
@@ -46,7 +46,7 @@ jobs:
 
       - name: Test
         env:
-          scheme: CarHunt
+          scheme: MyVeryOwnMap
           platform: ${{ 'iOS Simulator' }}
         run: |
           # Проверяем, есть ли тесты
