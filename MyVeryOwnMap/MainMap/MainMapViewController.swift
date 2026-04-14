@@ -1,7 +1,7 @@
 import UIKit
 import MapKit
 
-final class CollectionViewController: UIViewController {
+final class MainMapViewController: UIViewController {
     
     private let mapView = MKMapView()
 
@@ -13,7 +13,7 @@ final class CollectionViewController: UIViewController {
 }
 
 // MARK: - Setup View
-extension CollectionViewController: MKMapViewDelegate {
+extension MainMapViewController: MKMapViewDelegate {
     func setupView() {
         view.addSubview(mapView)
         setupMapView()
@@ -28,7 +28,7 @@ extension CollectionViewController: MKMapViewDelegate {
 }
 
 
-extension CollectionViewController {
+extension MainMapViewController {
     func setupLayout() {
         mapView.translatesAutoresizingMaskIntoConstraints = false
         
